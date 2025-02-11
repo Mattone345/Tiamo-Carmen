@@ -1,3 +1,26 @@
+* {
+    cursor: url('cuore-curs.png') 16 16, auto; /* Il cursore sarà un cuore */
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #b3003b;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 1.3s ease-out;
+    transition: 0.5;
+    z-index: 9999;
+}
+
+img:hover + .custom-cursor {
+    /*width: 60px;
+    height: 60px;*/
+    transform: scale(1.5);
+}
+
 body {
     background-color: #ffe4e1;
     font-family: 'Comic Sans MS', cursive, sans-serif;
